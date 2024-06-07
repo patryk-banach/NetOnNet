@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --primary-blue: #015582;
+    --secondary-blue: #E5F1F7;
+    --accent-blue: #027AB3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+.logo{
+    width: 160px; 
+    height: 40px;
+}
+.user-top{
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.login{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+background-color: #0056b3;
+}
+.top-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.search-input {
+    width: 300px;
+    padding: 10px;
+}
+
+.search-btn {
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.menu-left li{
+        font-weight: bold;
+}
+/* Section top */
+/* Carousel */
+.carousel{
+position: relative;
+width: 75%;
+height: 400px;
+object-fit: contain;
+}
+.c-img{
+    height: 400px;
+object-fit: contain;
+overflow: hidden;
+}
+.carousel img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+}
+.carousel .prev{
+    left: 20px;
+}
+.carousel .next{
+    right: 20px;
+}
+
+/* Banners */
+.banner{
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.banner p{
+    font-size: 40px;
+font-weight: bold;
+
+}
+.banner-cont{
+    height: 400px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pop{
+    text-align: center;
+    font-size: 16px;
+    color: var(--primary-blue);
+}
+.cats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.popcats{
+    width: 180px;
+    height: 150px;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+/*Featured*/
+.h2feat{
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.featured1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.product-container-wrapper{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+#product-container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    width: 150%;
+}
+/*prodcard*/
+.productcard{
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border: 5px;
+    margin-right: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.productcard img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.specs {
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.specs li {
+    margin-bottom: 5px;
+    text-align: left;
+    
+}
+.brand{
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+}
+.menu-left,
+.menu-right {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-left li a,
+.menu-right li a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    font-weight: 600;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 20px;
+}
+.del1{
+    background-color: #0056b3;
+    height: 80px;
+    color: white;
+    width: 100%;
+}
+
+footer .del1,
+footer .bottom,
+footer .support-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer .components {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .components svg {
+    width: 24px;
+    height: 24px;
+}
+
+footer .knappar button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}
+
+footer .divider {
+    border-left: 1px solid #ccc;
+    height: 100px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer .support-container .chat,
+footer .support-container .call {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-bottom .payment-methods img {
+    width: 40px;
+    margin: 0 5px;
+}
+.klubb{
+    background-color: var(--secondary-blue);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+    .top{
+        width: 100%;
+        height: 15%;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .top p{
+        margin: 15px;
+        font-weight: 500;
+    }
+    .medlemicon{
+        width: 40px;
+        padding-left: 8%;
+    }
+    
+    .perks{
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .perks ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        list-style: none;
+        font-weight: lighter;
+        margin-bottom: 10px;
+        margin-left: 25px;
+    }
+    
+    .klubb a{
+        padding-left: 10%;
+        text-decoration: none;
+        color: var(--primary-blue);
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+    
+    .knappar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        align-items: center;
+    }
+ 
+    .medlem, .loggain{
+        width: 80%;
+        height: 50px;
+        margin: 5px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 12px;
+    }
